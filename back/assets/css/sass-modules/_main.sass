@@ -1,0 +1,56 @@
+// In this file you will find the main body style for this project.
+// If you change this file you will need to recompile
+//the main style structure file again!
+ 
+//to do that just run in a terminal box the following:
+// sass {path/to/file.sass}:{path/to/file.css}
+main
+	width: calc(100% + 200px)
+	padding: 55px 0
+	-webkit-transition: all 0.3s
+	-moz-transition: all 0.3s
+	-ms-transition: all 0.3s
+	-o-transition: all 0.3s
+	transition: all 0.3s
+
+	.myContainer
+		margin: 25px 0px 80px 0px
+		
+		.page-heading
+			padding: 10px 15px
+			line-height: 2.1
+			text-transform: uppercase
+			background: $page-heading-color
+			color: $page-heading-text-color
+
+			.heading-icon
+				padding: 0 15px 0 10px
+
+			.btn
+				background: $page-heading-btn-color
+				border-color: $page-heading-btn-color
+				color: $page-heading-text-color
+				&:focus,
+				&:active
+					background: $white
+					border-color: $white
+					color: $page-heading-color
+					box-shadow: unset
+				&:focus:active
+					box-shadow: unset
+
+		.page-body
+			margin: 20px 0
+
+			form
+				textarea
+					resize: none
+
+				.form-group
+					label
+						padding-left: 12px
+
+				.form-control-file
+					margin:
+						top:4px
+						bottom: 8px

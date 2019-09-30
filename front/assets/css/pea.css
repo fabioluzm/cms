@@ -1,0 +1,117 @@
+html,body {
+    border-top: none;
+}
+
+section#pea-page {
+	padding-bottom: 50px;
+}
+
+.pea-page {
+	background: url(../images/pages/pea/hero-bg2.png) center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+/* .pea-page:before {
+	position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to top, rgba(255,255,255,0.2) 50%,rgba(0,0,255,0.4) 100%);
+} */
+
+.form-pea {
+	background: rgba(0,0,0,0.45);
+	color: #fff;
+	border-radius: 20px;
+	padding: 20px 30px;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.form-header {
+	margin-top: -20px;
+}
+
+.form-header h1 {
+	font-size: 22px;
+	line-height: 1.5;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 45px;
+	text-align: center;
+}
+
+.form-pea textarea.form-control {
+	resize: none;
+}
+
+.form-pea .form-control {
+	padding: 20px 12px;
+}
+
+.form-pea .checkbox {
+	margin-left: 15px;
+	position: unset;
+}
+
+.form-pea button {
+	padding: 10px 20px;
+	margin-top: 20px;
+    margin-bottom: 10px;
+    background: #eca024;
+    
+	/* margin-right: 15px; */
+	/* float: right; */
+}
+
+.form-pea button:hover {
+    background: #d38a13;
+    color: #fff;
+}
+
+.form-pea button:focus,
+.form-pea button:active {
+    color: #fff;
+}
+
+p.footer {
+	font-size: 14px;
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+
+a.pea-cprght {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a.pea-cprght:hover, a.pea-cprght:focus {
+    color: #fff;
+}
+
+.text-muted {
+    color: #fff
+}
+
+.errorMessage {
+    margin-top: 10px;
+}
+.errorMessage span {
+    color: #eca024;
+    background: rgba(0,0,0,0.35);
+    padding: 10px;    
+}
+
+.has-error .form-control {
+    border-color: #eca024;
+}
+
+@media (max-width: 991px) {
+	.form-header h1 {
+		margin-top: 0;
+	}
+}

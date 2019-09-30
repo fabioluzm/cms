@@ -1,0 +1,7 @@
+WEB-INF/
+.DS_Store
+robots.txt
+aspnet_client/
+landing/
+!userData/**
+!userData/readme.md

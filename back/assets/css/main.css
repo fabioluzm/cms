@@ -1,0 +1,329 @@
+@charset "UTF-8";
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header .nav-top {
+  width: calc(100% - 200px);
+  height: 55px;
+  border: none;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 997;
+  background: #03689a;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header .menu-lateral {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #03689a;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+header .menu-lateral img {
+  width: 100px;
+  height: auto;
+  margin: 30px 0px 0px 40px;
+  padding: 0;
+}
+header .menu-lateral p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+header .menu-lateral .aside-box {
+  overflow-y: auto;
+  max-height: calc(100% - 205px);
+}
+header .menu-lateral .aside-box .nav-aside {
+  background: transparent;
+}
+header .menu-lateral .aside-box .nav-aside hr {
+  margin: 0;
+  border-color: #ffffff;
+}
+header .menu-lateral .aside-box .nav-aside li:hover a {
+  color: #ffffff;
+}
+header .menu-lateral .aside-box .nav-aside li.active {
+  background: #ffffff;
+}
+header .menu-lateral .aside-box .nav-aside li.active a {
+  color: #000000;
+}
+header .menu-lateral .aside-box .nav-aside a {
+  color: #ffffff;
+  padding: 25px 0 25px 32px;
+}
+header .menu-lateral .aside-box .nav-aside a i {
+  padding-right: 10px;
+}
+header .menu-lateral .aside-box .version {
+  text-align: center;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+main {
+  width: calc(100% + 200px);
+  padding: 55px 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+main .myContainer {
+  margin: 25px 0px 80px 0px;
+}
+main .myContainer .page-heading {
+  padding: 10px 15px;
+  line-height: 2.1;
+  text-transform: uppercase;
+  background: #03689a;
+  color: #ffffff;
+}
+main .myContainer .page-heading .heading-icon {
+  padding: 0 15px 0 10px;
+}
+main .myContainer .page-heading .btn {
+  background: transparent;
+  border-color: transparent;
+  color: #ffffff;
+}
+main .myContainer .page-heading .btn:focus, main .myContainer .page-heading .btn:active {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #03689a;
+  box-shadow: unset;
+}
+main .myContainer .page-heading .btn:focus:active {
+  box-shadow: unset;
+}
+main .myContainer .page-body {
+  margin: 20px 0;
+}
+main .myContainer .page-body form textarea {
+  resize: none;
+}
+main .myContainer .page-body form .form-group label {
+  padding-left: 12px;
+}
+main .myContainer .page-body form .form-control-file {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.toggle-menu {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 0;
+  padding: 0;
+  background: #03689a;
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border: 0;
+}
+.toggle-menu:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.toggle-menu:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.toggle-menu:active {
+  background: #ffffff;
+  color: #03689a;
+}
+
+.nav-top .toggle-menu {
+  display: none;
+  left: 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.menu-lateral .toggle-menu {
+  display: inline-block;
+  right: 0;
+  border-radius: 50px 0 0 50px;
+}
+
+.nav-top.active {
+  width: calc(100% + 0px);
+}
+.nav-top .toggle-menu.active {
+  display: inline-block;
+}
+
+.menu-lateral.active {
+  left: -17%;
+}
+
+main.active {
+  width: calc(100% + 0px);
+}
+
+.footer.active {
+  width: calc(100% + 0px);
+}
+
+.image-tag {
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background: #17A2B8;
+  color: #ffffff;
+}
+
+table thead tr th:nth-of-type(1) {
+  width: 20%;
+}
+table thead tr th:nth-of-type(2) {
+  width: 20%;
+}
+
+.rcb {
+  display: none;
+}
+.rcb:checked + .rcb-label {
+  border-color: #008000;
+  box-shadow: 0 0 5px #008000;
+  border-radius: 15px;
+}
+.rcb:checked + .rcb-label::before {
+  content: "✓";
+  background-color: #008000;
+  transform: scale(1.5);
+  z-index: 1;
+}
+.rcb:checked + .rcb-label .rcb-img {
+  transform: scale(0.95);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.rcb-label {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+.rcb-label::before {
+  color: #ffffff;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+.rcb-label .rcb-img {
+  max-width: 100%;
+  height: auto;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+form.was-validated .form-control:valid {
+  border-color: #ced4da;
+  padding: 0.375rem 0.75rem;
+  background: #fff;
+}
+form.was-validated .form-control:valid:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+form.was-validated .form-control:invalid {
+  background-position: center right calc(.375em + 0.7875rem);
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab .tablinks {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab .tablinks:hover {
+  background-color: #ddd;
+}
+.tab .tablinks.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#mainTab {
+  display: block;
+}
+
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  min-height: 50px;
+  width: calc(100% + 200px);
+  margin-top: 20px;
+  text-align: center;
+  background: transparent;
+  color: #222;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=main.css.map */

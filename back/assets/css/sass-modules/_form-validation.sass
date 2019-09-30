@@ -1,0 +1,19 @@
+// In this file you will find the reset colors when the form validation is valid.
+// If you change this file you will need to recompile the main style structure file again!
+ 
+//to do that just run in a terminal box the following:
+// sass {path/to/file.sass}:{path/to/file.css}
+
+form
+	&.was-validated
+		.form-control
+			&:valid
+				border-color: #ced4da
+				padding: .375rem .75rem
+				background: #fff
+				&:focus
+					border-color: #80bdff
+					box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)
+
+			&:invalid
+				background-position: center right calc(.375em + 0.7875rem)

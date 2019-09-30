@@ -1,0 +1,37 @@
+// In this file you will find the form tabs style for this project.
+// If you change this file you will need to recompile
+//the main style structure file again!
+ 
+//to do that just run in a terminal box the following:
+// sass {path/to/file.sass}:{path/to/file.css}
+
+
+.tab
+    overflow: hidden
+    border: 1px solid #ccc
+    background-color: #f1f1f1
+
+    .tablinks
+        background-color: inherit
+        float: left
+        border: none
+        outline: none
+        cursor: pointer
+        padding: 14px 16px
+        transition: 0.3s
+        font-size: 17px
+
+        &:hover
+            background-color: #ddd
+        &.active
+            background-color: #ccc
+
+
+.tabcontent 
+    display: none
+    padding: 6px 12px
+    border: 1px solid #ccc
+    border-top: none
+
+#mainTab
+    display: block

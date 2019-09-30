@@ -1,0 +1,1 @@
+<cfset redirect('back/system/dashboard.cfm')>

@@ -1,0 +1,89 @@
+// In this file you will find the header style for this project.
+// If you change this file you will need to recompile
+//the main style structure file again!
+
+//to do that just run in a terminal box the following:
+// sass {path/to/file.sass}:{path/to/file.css}
+
+header
+    .nav-top
+        width: calc(100% - 200px)
+        height: 55px
+        border: none
+        border-radius: 0
+        position: fixed
+        top: 0
+        right: 0
+        z-index: 997
+        background: $navbar-color
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -ms-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+
+    .menu-lateral
+        width: 220px
+        position: fixed
+        top: 0
+        left: 0
+        height: 100vh
+        z-index: 999
+        background: $aside-menu-color
+        color: $aside-menu-text-color
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -ms-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
+
+        img
+            width: 100px
+            height: auto
+            margin: 30px 0px 0px 40px
+            padding: 0
+            // filter: invert(100%)
+
+        p
+            color: $nav-text-color
+            font:
+                size: 18px
+                weight: 500
+            text-align: center
+
+        .aside-box
+            overflow-y: auto
+            // height: 100%
+            max-height: calc(100% - 205px)
+            // background: pink
+
+            .nav-aside
+                background: transparent
+
+                hr
+                    margin: 0
+                    border-color: $aside-menu-text-color
+
+                li
+                    // padding: 20px 0
+                    &:hover
+                        a
+                            color: $white
+                    &.active
+                        background: $white
+                        a
+                            color: $black
+
+                a
+                    color: $aside-menu-text-color
+                    padding: 25px 0 25px 32px
+
+                    i
+                        padding-right: 10px
+
+            .version
+                text-align: center
+                padding-bottom: 15px
+                width: 100%

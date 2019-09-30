@@ -1,0 +1,55 @@
+// In this file you will find the checkbox style for this project.
+// If you change this file you will need to recompile
+//the main style structure file again!
+ 
+//to do that just run in a terminal box the following:
+// sass {path/to/file.sass}:{path/to/file.css}
+
+.rcb
+	display: none
+
+	&:checked 
+		+ .rcb-label
+			border-color: $rcb-checked-color
+			box-shadow: 0 0 5px $rcb-checked-color
+			border-radius: 15px
+			
+			&::before
+				content: "✓"
+				background-color: $rcb-checked-color
+				transform: scale(1.5)
+				z-index: 1
+
+			.rcb-img 
+				transform: scale(0.95)
+				border-radius: 10px
+				z-index: -1
+
+.rcb-label 
+	border: 1px solid $white
+	padding: 10px
+	display: block
+	position: relative
+	margin: 10px
+	cursor: pointer
+
+	&::before 
+		color: $white
+		content: " "
+		display: block
+		border-radius: 50%
+		position: absolute
+		top: 0
+		right: 0
+		width: 25px
+		height: 25px
+		text-align: center
+		line-height: 25px
+		transition-duration: 0.4s
+		transform: scale(0)
+
+	.rcb-img 
+		max-width: 100%
+		height: auto
+		transition-duration: 0.2s
+		transform-origin: 50% 50%

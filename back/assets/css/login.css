@@ -1,0 +1,26 @@
+.header{
+    /* background-color:#6c0107; */
+    background-color:#03689a;
+    color:white;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.card-title span {
+    line-height: 2
+}
+
+.login-footer {
+    display: inline-block;
+    width: 100%;
+}
+
+.label-login{
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.p-login { 
+    margin: 0;
+}
+
